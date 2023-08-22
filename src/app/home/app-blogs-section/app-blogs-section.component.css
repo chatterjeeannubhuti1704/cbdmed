@@ -1,0 +1,7 @@
+.blg-main{background-color: #fff;margin: 15px 0;text-align: center;padding: 15px 0;}
+.blg-head{padding:20px 0;}
+.blg-head h1{font-size: 30px;font-weight: 400;}
+.blg-details{position: relative; width: 90%; margin: -15% auto 0; background-color: #fff; z-index: 999; padding: 30px 15px;border-radius: 5px; border: 1px solid #dcdcdc;}
+.blg-details h6{font-size: 14px;font-weight: 400;height: 2rem;}
+.blg-details button{border: none; background: none; font-size: 14px;color: #87B03A;border-bottom: 1px solid #87B03A; margin-top: 12px;}
+img{max-width: 100%;}

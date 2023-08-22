@@ -1,0 +1,33 @@
+<div class="ratings-main-div">
+    <div class="container">
+        <div class="ratings-header">
+            <h1>What Our Customers Say</h1>
+        </div> 
+        <div class="row">
+            <div *ngFor="let user of customerRatings" class="col-lg-3">
+                <div class="rating-box">
+                    <div class="rating-head-part">
+                        <h6>{{user.ratingTitle}}</h6>
+                    <p>
+                        <!-- rating -->
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-half-alt-solid.svg" alt=""></span>
+                    </p>
+                    </div>
+                    <p class="rating-text">{{user.ratingDetails}}<span *ngIf="user.ratingDetails.length===95">...</span></p>
+                    <div class="rating-profile-img-n-details">
+                        <img [src]="user.customerImage" alt="">
+                        <!-- customerImage -->
+                        <div class="profile-details">
+                            <h6>{{user.customerName}}</h6>
+                            <p>{{user.postedDate}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

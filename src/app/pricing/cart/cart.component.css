@@ -1,0 +1,300 @@
+.cart-container {
+    width: 80%;
+    margin: 130px auto 0 auto;
+}
+
+.cart-header {
+    color: #2A4B45;
+    font-size: 2.6rem;
+    margin: 50px 0 20px 0;
+    text-transform: capitalize;
+}
+
+.cart-list {
+    padding: 20px 0;
+}
+
+.cart-item-image {
+    background-color: #ebebeb;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cart-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 5px 0px 4px #d9d8d8;
+}
+
+.delete {
+    border: none;
+    background: none;
+    opacity: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.delete img {
+    height: 35px;
+}
+
+.cart-item-body {
+    position: relative;
+    justify-content: space-evenly;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.cart-item-name {
+    font-size: 18px;
+    color: #333333;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: Georgia;
+    margin: 0 0 3px 0;
+}
+
+.cart-item-details {
+    color: #707070;
+    font-size: 13px;
+    width: 50%;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    color: #83ab3a;
+    margin: 0;
+}
+
+.unitprice {
+    font-size: 12px !important;
+}
+
+.old-price {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    display: inline;
+    width: fit-content;
+}
+
+.old-price span {
+    color: #FF9100;
+}
+
+.price {
+    font-size: 16px;
+    color: #000;
+    margin: 0 6px 0 0;
+    display: inline;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.checkout-btn {
+    background-color: #F1A542;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.checkout-btn-div {
+    margin: 60px 20px;
+}
+
+.odersum {
+    padding: 20px 10px;
+}
+
+.odersum table {
+    width: 100%;
+    margin-top: 25px;
+    border-bottom: 1px solid #bebebe;
+}
+
+.odersum table tr {
+    padding: 10px 0;
+}
+
+.odersum table tr td {
+    font-size: 1.09em;
+    padding: 5px 0;
+}
+
+.odersum table tr td:nth-child(even) {
+    text-align: right;
+}
+
+.odersum table tr td p {
+    font-size: 0.8rem;
+    color: #707070;
+    font-weight: 400;
+}
+
+.discount {
+    color: #707070;
+}
+
+.promocode {
+    margin: 40px 0;
+    position: relative;
+}
+
+.promocode input {
+    width: 100%;
+    height: 3rem;
+    padding: 10px;
+}
+
+.promocode input:hover,
+.promocode input:focus {
+    outline: none !important;
+}
+
+.plus-icon {
+    position: absolute;
+    right: 11px;
+    font-size: 3rem;
+    bottom: -6px;
+}
+
+.quantityControl {
+    /* position: absolute;
+    bottom: 15px;
+    right: 25px; */
+    margin: 0;
+}
+
+.removeButton,
+.addButton {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #2b4b45;
+    color: #fff;
+    line-height: 1px;
+}
+
+.units {
+    padding: 8px 7px;
+    font-size: 18px;
+}
+
+.total {
+    font-weight: 600 !important;
+}
+
+.cart-total {
+    font-weight: 400;
+}
+
+@media screen and (max-width:1366px) {
+    .cart-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .cart-header {
+        margin: 90px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .delete {
+        top: auto;
+        bottom: 20px;
+    }
+
+    .left-col {
+        padding-right: 0;
+    }
+
+    .right-col {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .quantityControl {
+        margin: 5px 0 5px 0;
+    }
+
+    .old-price {
+        font-size: 14px;
+        margin: 0px 0px 8px 0;
+    }
+
+    .price {
+        font-size: 14px;
+        margin: 0 6px 0 0;
+    }
+
+    .cart-item-name {
+        font-size: 16px;
+        margin: 0 0 3px 0;
+    }
+
+    .cart-item-body {
+        padding: 20px 0px;
+    }
+
+    .delete {
+        right: 2px;
+    }
+
+    .removeButton,
+    .addButton {
+        font-size: 15px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .units {
+        font-size: 14px;
+    }
+
+    .delete  img  {
+        height: 25px;
+    }
+}@media screen and (max-width:400px) {
+
+    .old-price ,
+    .price {
+        font-size: 13px;
+    }
+
+    .cart-item-name {
+        font-size: 14px;
+    }
+
+    .removeButton,
+    .addButton {
+        font-size: 13px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .units {
+        font-size: 13px;
+    }
+
+    .delete  img  {
+        height: 23px;
+    }
+}

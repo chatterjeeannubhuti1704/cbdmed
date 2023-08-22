@@ -1,0 +1,18 @@
+<div class="blg-main">
+    <div class="container">
+        <div class="blg-head">
+            <h1>Explore Popular Blogs</h1>
+        </div>
+        <div class="blg-card-holder row">
+            <div *ngFor="let blog of blogs" class="blg-card col-lg-4">
+                <div class="blg-img">
+                    <img [src]="blog.blogImg" alt="">
+                </div>
+                <div class="blg-details">
+                    <h6>{{blog.blogTitle}}</h6>
+                    <button (click)="gotoBlog()">Read More</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

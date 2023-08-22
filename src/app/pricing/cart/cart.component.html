@@ -1,0 +1,80 @@
+<div class="cart-container" >
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-12">
+            <h1 class="cart-header">My cart</h1>
+            <h6 class="cart-total">Total ({{cartProducts.length}} items): {{rupsign}}{{sum}}</h6>
+            <div class="cart-list">
+                <div *ngFor="let prod of cartProducts ; index as i" class="cart-item">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-5  left-col">
+                            <div class="cart-item-image">
+                                <img src="assets\img\top-pro-img-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-8 col-md-8 col-sm-7 col-7  right-col">
+                            <div class="cart-item-body">
+                               <span> <p class="cart-item-name">{{prod.name}}</p>
+                               <span><p class="price">{{rupsign}}{{prod.unitPrice}}</p>
+                                <p class="old-price"><s>{{rupsign}}{{prod.oldPrice}}</s> ({{prod.dispercent}}%)<span> Save {{rupsign}}{{prod.saveamt}} </span></p>  </span>
+                               </span>
+                                <p class="quantityControl">
+                                    <span><button class="removeButton" (click)="removeOne(i)">-</button></span>
+                                    <span class="units">{{prod.quantity}}</span>
+                                    <span><button class="addButton" (click)="addOne(i)">+</button></span>
+                                </p>
+                                <button class="delete">
+                               <img src="assets\img\delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+            <div class="checkout-btn-div">
+                <button class="checkout-btn">
+                   Checkout
+                </button>
+                <div class="odersum">
+                     <h2>Order Summary</h2>
+                     <table>
+                        <tr>
+                            <td>{{cartProducts.length}} items</td>
+                            <td>{{rupsign}}{{sum}}</td>
+                        </tr>
+                        <tr>
+                            <td>Original Price</td>
+                            <td>{{rupsign}}{{(sum+1000)}}</td>
+                        </tr> 
+                        <tr>
+                            <td>Delivery</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr class="discount">
+                            <td>Total Discount</td>
+                            <td>-{{rupsign}}1000</td>
+                        </tr> 
+                        <br>
+                        <tr class="total">
+                            <td >
+                                Total:
+                                <p>(inclusive of all tax)</p>
+                            </td>
+                            <td>{{rupsign}}{{sum}}</td>
+                        </tr>
+                     </table>
+                     <div class="promocode">
+                        <input type="text" placeholder="Enter your promocode">
+                        <span class="plus-icon">+</span>
+                     </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- //checkout btn
+oder summery//header -->

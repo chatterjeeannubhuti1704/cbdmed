@@ -1,0 +1,35 @@
+<div class="top-product-slider-main">
+    <div class="container container-responsive">
+        <div class="top-product-header">
+            <h1>Shop Top Products</h1>
+            <p>CBD Oil, CBD Gummies, CBD Capsules, and CBD Topical Formulas</p>
+            <div class="top-product-selector-div">
+                <button *ngFor="let items of topcbdProduct"  (click)="opentab(items.id)" [class.active]="items.id===this.activeProductId">{{items.prodName}}</button>
+            </div>
+        </div>
+        <div class="res-scrl">
+            <div *ngFor="let items of topcbdProduct">
+                <div *ngIf="items.id === activeProductId" class="top-product row">
+                    <div *ngFor="let item of items.prod" class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <div class="product-card">
+                            <div class="product-card-img-part">
+                                <img class="product-card-img" [src]='item.img' alt="">
+                                <img class="newLaunch" src="assets\img\newLaunch.svg" alt="">
+                                <span class="rating-box"><span class="rating-value">4.5</span><img alt=""
+                                        src="assets\img\star-solid-white.svg"></span>
+                            </div>
+                            <div class="product-card-details-part">
+                                <h6>{{item.name}}</h6>
+                                <p>{{item.details}}</p>
+                                <p class="price">{{rupsign}}{{item.newPrice}}</p>
+                                <p class="old-price"><s>{{rupsign}}{{item.oldPrice}}</s> {{item.disPer}}% <span> Save
+                                        {{rupsign}}{{item.disPri}} </span></p>
+                                <button class="Buy-Now-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.ratings-main-div{margin: 15px 0;background-color: #fff;padding: 0 0 35px 0;}
+.ratings-header{text-align: center;padding: 20px 0;}
+.ratings-header h1{font-size: 30px;font-weight: 400;}
+.rating-box{border: 1px solid #DCDCDC;padding: 10px;}
+.rating-head-part {display: flex;justify-content: space-between;align-items: center;}
+.rating-head-part h6{font-size: 14px;}
+.rating-text{font-size: 12px; height: 2.3rem;}
+.rating-profile-img-n-details{display: flex;justify-content: flex-start;align-items: center;}
+.rating-profile-img-n-details img{margin: 0 12px 0 0;}
+.profile-details h6{font-size: 16px;}
+.profile-details p{font-size: 12px;margin: 0;}

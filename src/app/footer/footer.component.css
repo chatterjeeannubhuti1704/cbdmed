@@ -1,0 +1,18 @@
+.footer-main{background-color: #2A4B45;color: #FFF;padding: 70px 0;}
+.footer-inner{width: 80%; margin: auto;}
+ul{list-style: none;    margin: 18px 0 0 0;padding: 0;}
+li{ padding: 15px 0 0 0;font-size: 14px;}
+h6{text-transform: uppercase;font-size: 18px;}
+.img-list{margin: 0 0 0 36px;}
+.img-list li {padding:0;}
+.img-list li img{margin: 0 0 50px 0;}
+.footer-btn{margin: 15px 0;font-size: 20px;background: #F1A542;color: #fff;border: none;border-radius: 5px;    padding: 7px 20px;}
+.shield{padding: 0 10px 0 0;}
+.payment-options
+{
+    margin: 20px 0;
+}
+.payment-options img
+{
+margin-right: 10px;
+}

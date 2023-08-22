@@ -1,0 +1,137 @@
+<div style="width: 100%;margin:130px auto;overflow-x: hidden;">
+    <div class="row">
+        <div class="col-2">
+            <div class="filter">
+                <select>
+                <option value="volvo">Sort By</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                </select>
+                <button>Filter</button>
+                <div class="categories">
+                    <h4>Categories</h4>
+                    <p *ngFor="let pro of products">
+                        {{pro.prodName}}
+                    </p>
+                </div>
+                <div class="discount">
+                    <h4>Discount</h4>
+                    <p>
+                        <input type="checkbox">less than 70%
+                    </p>
+                    <p>
+                        <input type="checkbox"> less than 30%
+                    </p>
+                    <p>
+                        <input type="checkbox"> less than 10%
+                    </p>
+                </div>
+                <div class="Price">
+                    <h4>Price</h4>
+                    <p>
+                        <input type="checkbox">less than 100
+                    </p>
+                    <p>
+                        <input type="checkbox"> less than 300
+                    </p>
+                    <p>
+                        <input type="checkbox"> less than 500
+                    </p>
+                    <p>
+                        <input type="checkbox"> less than 1000
+                    </p>
+                    <p>
+                        <input type="checkbox"> more than 1000
+                    </p>
+                </div>
+                <div class="Rating">
+                    <h4>Rating</h4>
+                    <p><input type="checkbox">
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                    </p>
+                    <p><input type="checkbox">
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                    </p>
+                    <p><input type="checkbox">
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                    </p>
+                    <p><input type="checkbox">
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                    </p>
+                    <p><input type="checkbox">
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                        <span><img src="assets\img\star-solid.svg" alt=""></span>
+                    </p>
+                </div>
+                <div class="Size">
+                    <h4>Weight</h4>
+                    <p>
+                        <input type="checkbox"> 20mg
+                    </p>
+                    <p>
+                        <input type="checkbox"> 40mg
+                    </p>
+                    <p>
+                        <input type="checkbox"> 60mg
+                    </p>
+                    <p>
+                        <input type="checkbox">100mg
+                    </p>
+                    <h4>Quantity</h4>
+                    <p>
+                        <input type="checkbox"> 50ml
+                    </p>
+                    <p>
+                        <input type="checkbox"> 100ml
+                    </p>
+                    <p>
+                        <input type="checkbox"> 250ml
+                    </p>
+                    <p>
+                        <input type="checkbox"> 500ml
+                    </p>
+                    <p>
+                        <input type="checkbox">1l
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-10">
+            <div>
+                <div *ngFor="let items of products" class="row">
+                    <div *ngFor="let item of items.prod" class="col-lg-3 col-md-3 col-sm-3 col-3">
+                        <div class="product-card">
+                            <div class="product-card-img-part">
+                                <img class="product-card-img" [src]='item.img' alt="">
+                                <img alt="" class="newLaunch" src="assets\img\newLaunch.svg">
+                                <span class="rating-box"><span class="rating-value">4.5</span><img alt=""
+                                        src="assets\img\star-solid-white.svg"></span>
+                            </div>
+                            <div class="product-card-details-part">
+                                <h6>{{item.name}}</h6>
+                                <p>{{item.details}}</p>
+                                <p class="price">{{rupsign}}{{item.newPrice}}</p>
+                                <p class="old-price"><s>{{rupsign}}{{item.oldPrice}}</s> {{item.disPer}}% <span> Save
+                                        {{rupsign}}{{item.disPri}} </span></p>
+                                <button class="Buy-Now-btn">Buy Now</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

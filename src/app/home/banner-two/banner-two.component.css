@@ -1,0 +1,112 @@
+.banner-2 {
+    background: url(src\assets\img\Thumb.svg) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 500px;
+}
+
+.banner-2-content {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    display: flex;
+    height: 500px;
+}
+
+.question-box {
+    width: 45%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    border: 1px solid #ffffff2e;
+    /* box-shadow: inset 0px 1px 10px 15px #fff; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .question-box:hover {box-shadow: inset 0px 1px 10px 15px #fff,0px 1px 8px 5px #707070;cursor: pointer;} */
+.question-box-inner {
+    width: 80%;
+    text-align: center;
+}
+
+.question {
+    font-size: 30px;
+    color: #474747;
+}
+
+.answer {
+    font-size: 16px;
+    color: #333;
+}
+
+.LearnMore-btn {
+    background-color: #045648;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    padding: 8px 20px;
+}
+
+@media screen and (max-width:1199px) {
+    .banner-2-content {
+        height: auto;
+    }
+
+    .question-box {
+        width: 54%;
+        margin: 10px 0;
+    }
+
+    .LearnMore-btn {
+        margin: 20px 0 20px 0;
+    }
+
+    .banner-2 {
+        height: auto;
+        background-size: cover;
+    }
+
+    .question {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .question {
+        margin: 18px 0 10px;
+        font-size: 24px;
+    }
+
+    .question-box-inner {
+        width: 90%;
+    }
+
+    .question-box {
+        width: 60%;
+    }
+
+    .container-res{
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .banner-2-content{
+        justify-content: center;
+    }
+    .question-box {
+        width: 80%;
+    }}
+
+    @media screen and (max-width:479px) {
+       
+        .question-box {
+            width: 100%;
+        }}
