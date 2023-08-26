@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40">
+  <g id="Group_33" data-name="Group 33" transform="translate(-894 -29)">
+    <path id="Path_220" data-name="Path 220" d="M0,0H42.9C44.059,0,45,2.239,45,5V35c0,2.761-.941,5-2.1,5H0Z" transform="translate(894 29)" fill="#87b03a"/>
+    <path id="search-solid" d="M19.764,17.326l-3.9-3.9a.939.939,0,0,0-.665-.274h-.638a8.137,8.137,0,1,0-1.409,1.409V15.2a.939.939,0,0,0,.274.665l3.9,3.9a.935.935,0,0,0,1.327,0l1.108-1.108A.944.944,0,0,0,19.764,17.326ZM8.141,13.15a5.01,5.01,0,1,1,5.01-5.01A5.007,5.007,0,0,1,8.141,13.15Z" transform="translate(907.963 38.98)" fill="#fff" stroke="#87b03a" stroke-width="1.5"/>
+  </g>
+</svg>
