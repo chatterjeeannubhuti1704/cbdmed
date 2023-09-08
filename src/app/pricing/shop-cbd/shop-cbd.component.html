@@ -2,22 +2,25 @@
     <div class="row">
         <div class="col-2">
             <div class="filter">
-                <select>
+                <!-- <select>
                 <option value="volvo">Sort By</option>
                 <option value="saab">Saab</option>
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
-                </select>
-                <button>Filter</button>
+                </select> -->
+                <!-- <button>Filter</button> -->
                 <div class="categories">
                     <h4>Categories</h4>
+                    <p >
+                        <button (click)="filterByCategory(10)" [class.active]="this.filterByCategoryid===10"> All</button>
+                      </p>
                     <p *ngFor="let pro of products">
-                        {{pro.prodName}}
+                      <button (click)="filterByCategory(pro.id)" [class.active]="pro.id===this.filterByCategoryid"> {{pro.prodName}}</button>
                     </p>
                 </div>
                 <div class="discount">
                     <h4>Discount</h4>
-                    <p>
+                    <!-- <p>
                         <input type="checkbox">less than 70%
                     </p>
                     <p>
@@ -25,7 +28,8 @@
                     </p>
                     <p>
                         <input type="checkbox"> less than 10%
-                    </p>
+                    </p> -->
+                    <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
                 </div>
                 <div class="Price">
                     <h4>Price</h4>
@@ -108,15 +112,17 @@
             </div>
 
         </div>
-        <div class="col-10">
-            <div>
-                <div *ngFor="let items of products" class="row">
-                    <div *ngFor="let item of items.prod" class="col-lg-2 col-md-2 col-sm-2 col-2">
+        <div class="col-10 " style="background-color: #fff;">
+            <div class="container">
+                <div *ngFor="let items of products" >
+                    <div *ngIf="filterByCategoryid==items.id || filterByCategoryid==10" class="row">
+        
+                    <div *ngFor="let item of items.prod" class="col-lg-3 col-md-3 col-sm-3 col-3">
                         <div class="product-card">
                             <div class="product-card-img-part">
                                 <img class="product-card-img" [src]='item.img' alt="">
                                 <img alt="" class="newLaunch" src="assets\img\newLaunch.svg">
-                                <span class="rating-box"><span class="rating-value">4.5</span><img alt=""
+                                <span class="rating-box"><span class="rating-value">{{item.rating}}</span><img alt=""
                                         src="assets\img\star-solid-white.svg"></span>
                             </div>
                             <div class="product-card-details-part">
@@ -131,6 +137,8 @@
 
                     </div>
                 </div>
+                </div>
+                
             </div>
         </div>
     </div>

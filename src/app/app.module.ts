@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {HomeModule} from './home/home.module';
 import{PricingModule} from './pricing/pricing.module'
-
+import { NgxSliderModule } from 'ngx-slider-v2';
 
 @NgModule({
   declarations: [
@@ -22,6 +22,7 @@ import{PricingModule} from './pricing/pricing.module'
     PricingModule,
     BrowserModule,
     AppRoutingModule,
+    NgxSliderModule,
   ],
   providers: [{provide:LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]

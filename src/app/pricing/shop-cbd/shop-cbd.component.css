@@ -19,6 +19,8 @@
 .filter{
     background: #fff;
     padding: 20px ;
+    height: 86vh;
+    overflow: hidden scroll;
 }
 .filter p{
     margin: 0 0 5px 5px;
@@ -26,4 +28,10 @@
 }
 .filter input{
     margin: 0 5px 0 0;
+}
+.categories p button{
+    border: none; background: none; font-size: 14px; color: #333333;transition-delay: 3ms;
+}
+.active{
+    background: #EBEBEB !important ; border-radius: 20px; padding: 4px 10px; 
 }

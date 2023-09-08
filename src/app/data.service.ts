@@ -65,7 +65,7 @@ export class DataService {
           oldPrice:300.00,
           disPer:50.0,
           disPri:31.00,
-          rating:5,
+          rating:5.0,
           img:"assets/img/top-pro-img-2.png"
         },
         {
@@ -75,7 +75,7 @@ export class DataService {
           oldPrice:300.00,
           disPer:50.0,
           disPri:31.00,
-          rating:5,
+          rating:5.0,
           img:"assets/img/top-pro-img-1.png"
         },
         {
@@ -131,7 +131,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:5,
+          rating:5.0,
           img:"assets/img/top-pro-img-2.png"
         },
         {
@@ -141,7 +141,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:3,
+          rating:3.0,
           img:"assets/img/top-pro-img-2.png"
         },
         {
@@ -151,7 +151,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:5,
+          rating:5.0,
           img:"assets/img/top-pro-img-2.png"
         },
         {
@@ -161,7 +161,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:4,
+          rating:4.0,
           img:"assets/img/top-pro-img-2.png"
         }
       ]
@@ -177,7 +177,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:3,
+          rating:3.0,
           img:"assets/img/1cbd.svg"
         },
         {
@@ -187,7 +187,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:5,
+          rating:5.0,
           img:"assets/img/1cbd.svg"
         },
         {
@@ -227,7 +227,7 @@ export class DataService {
           oldPrice:150.00,
           disPer:20.6,
           disPri:31.00,
-          rating:5,
+          rating:5.0,
           img:"assets/img/1cbd.svg"
         }
       ]
